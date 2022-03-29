@@ -1,0 +1,432 @@
+/* ALL */
+* {
+	margin: 0;
+	padding: 0;
+	font-family: Helvetica;
+	font-weight: 400;
+	color: #fff;
+}
+
+a:link {
+	text-decoration: none;
+}
+
+/** Home **/
+/* Banner */
+
+#banner {
+	height: 100vh;
+	width: 100vw;
+	background-image: linear-gradient(#084B77, #1084AB);
+}
+
+#logo {
+	width: 150px;
+	height: 150px;
+	background-image: url('images/LogoWhite.png');
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	left: 30px;
+}
+
+
+/* Home page details */
+
+#homeSelection {
+	top: 15%;
+	height: 45vh;
+	width: 65vw;
+	position: center;
+	margin: auto;
+	display: flex;
+	padding-top: 5%;
+}
+
+
+#buyTickets, #findRoute {
+	width: 50%;
+	height: 100%;
+	border-radius: 5%;
+	overflow: hidden;
+}
+
+#buyTickets {
+	margin-right: 20%;
+}
+
+/*#buyTickets a:link {
+	text-decoration: none;
+}*/
+
+.selectTop {
+	height: 60%;
+	background-color: #fff;
+}
+
+.selectBottom {
+	height: 40%;
+	background-color: #5DE9EB;
+}
+
+.selectBottom h2 {
+	text-align: center;
+	position: relative;
+	top: 35%;
+	color: #022D49;
+}
+
+#ticketImage {
+	background-image: url('images/busTicket.png');
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+#routeImage {
+	background-image: url('images/arrowRoute.png');
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+
+
+
+/* Tickets page */
+
+.container {
+	/*background-color: blue;*/
+	display: flex;
+	flex-wrap: nowrap;
+	width: 80vw;
+	margin: 0 auto;
+	position: relative;
+	margin-top: 15px;
+}
+
+/*.container h4 {
+	color: black;
+}*/
+
+.container .innerContainer {
+	/*background-color: #0C7879;*/
+	width: 33.33%;
+	margin: 3%;
+}
+
+.container .innerContainer .innerContent{
+	background-color: #0C7879;
+	width: 100%;
+  	text-align: center;
+  	line-height: 200px;
+  	font-size: 30px;
+  	border: 2px solid black;
+  	color: white;
+}
+
+.innerContainer .innerText {
+	margin-top: 5%;
+}
+
+.innerContainer .innerText h5{
+	color: black;
+	font-size: 16px;
+}
+
+
+.ticketHeadings {
+	color: black;
+	text-align: center;
+	letter-spacing: 2px;
+	font-size: 32px;
+	text-transform: uppercase;
+}
+
+#logo2 {
+	width: 150px;
+	height: 150px;
+	background-image: url('images/Logo.png');
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	left: 30px;
+}
+
+
+#progressbar {
+  background-color: #efefef;
+  border-radius: 13px;
+  /* (height of inner div) / 2 + padding */
+  padding: 3px;
+  margin: 0 10% 3% 10%;
+}
+
+#progressbar > div {
+  background-color: #5DE9EB;
+  width: 20%;
+  /* Adjust with JavaScript */
+  height: 20px;
+  border-radius: 10px;
+}
+
+
+
+#progressbar2 {
+  background-color: #efefef;
+  border-radius: 13px;
+  /* (height of inner div) / 2 + padding */
+  padding: 3px;
+  margin: 0 10% 3% 10%;
+}
+
+#progressbar2 > div {
+  background-color: #5DE9EB;
+  width: 40%;
+  /* Adjust with JavaScript */
+  height: 20px;
+  border-radius: 10px;
+}
+
+
+#progressbar3 {
+  background-color: #efefef;
+  border-radius: 13px;
+  /* (height of inner div) / 2 + padding */
+  padding: 3px;
+  margin: 0 10% 3% 10%;
+}
+
+#progressbar3 > div {
+  background-color: #5DE9EB;
+  width: 60%;
+  /* Adjust with JavaScript */
+  height: 20px;
+  border-radius: 10px;
+}
+
+
+#progressbar4 {
+  background-color: #efefef;
+  border-radius: 13px;
+  /* (height of inner div) / 2 + padding */
+  padding: 3px;
+  margin: 0 10% 3% 10%;
+}
+
+#progressbar4 > div {
+  background-color: #5DE9EB;
+  width: 100%;
+  /* Adjust with JavaScript */
+  height: 20px;
+  border-radius: 10px;
+}
+
+
+@keyframes progressbar{
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 20%;
+  }
+}
+
+@keyframes progressbar2{
+  0% {
+    width: 20%;
+  }
+  100% {
+    width: 40%;
+  }
+}
+
+@keyframes progressbar3{
+  0% {
+    width: 40%;
+  }
+  100% {
+    width: 60%;
+  }
+}
+
+@keyframes progressbar4{
+  0% {
+    width: 60%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+
+#progressbar div{  
+  /* This section calls the slideInFromLeft animation we defined above */
+  animation: 0.75s ease-out 0s 1 progressbar;
+}
+
+
+#progressbar2 div{  
+  /* This section calls the slideInFromLeft animation we defined above */
+  animation: 0.75s ease-out 0s 1 progressbar2;
+}
+
+#progressbar3 div{  
+  /* This section calls the slideInFromLeft animation we defined above */
+  animation: 0.75s ease-out 0s 1 progressbar3;
+}
+
+#progressbar4 div{  
+  /* This section calls the slideInFromLeft animation we defined above */
+  animation: 0.75s ease-out 0s 1 progressbar4;
+}
+
+/* Single Ticket Page */
+
+
+.single h2 {
+	color: black;
+	font-size: 24px;
+	text-align: center;
+	padding: 12px;
+	font-weight: bold;
+}
+
+
+
+/* Single Adult Ticket */ 
+
+.confirmation {
+	width: 40%;
+	padding: 2%;
+	height: 50vh;
+	/*background-color: black;*/
+	margin: 0 auto;
+	margin-top: 20px;
+	text-align: center;
+}
+
+.confirmUpper h2, .confirmUpper h1 {
+	padding: 6px;
+	color: black;
+}
+
+.confirmUpper {
+	height: 20%;
+	/*background-color: lightgray;*/
+	padding: 18px;
+}
+
+.confirmationForm {
+	background-color: white;
+	width: 100%;
+	height: 100%;
+	border: 3px solid #efefef;
+
+} 
+
+.confirmInfo {
+	background-color: #efefef;
+	margin: 10px;
+}
+
+.confirmInfo h4{
+	color: black;
+	text-align: left;
+	padding: 8px;
+	position: relative;
+	left: 10px;
+}
+
+.checkoutHolder {
+	padding: 12px;
+}
+
+
+.checkoutButton {
+	background-color: black;
+	width: 30%;
+	margin: 0 auto;
+	padding: 28px;
+	margin-top: 10px;
+}
+
+
+.iconImg {
+	height: 20px;
+	width: 20px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	float: left;
+	padding: 2px;
+	margin: 6px;
+}
+
+#flagIcon {
+	background-image: url('images/flag.png');
+}
+
+#userIcon {
+	background-image: url('images/user.png');
+}
+
+#ticketIcon {
+	background-image: url('images/ticket.png');
+}
+
+
+/* Confirmation Page */
+
+#confirmedContainer {
+	width: 40vw;
+	background-color: white;
+	height: 60vh;
+	margin: 0 auto;
+	border-radius: 5%;
+	overflow: hidden;
+}
+
+#confirmed {
+	height: 100%;
+	width: 100%;
+}
+
+#confirmedTop {
+	width: 100%;
+	height: 45%;
+	background-color: #0C7879;
+	padding: 40px;
+	box-sizing: border-box; 
+	margin: 0 auto;
+}
+
+#confirmedBottom h3 {
+	color: black;
+}
+
+
+#confirmedIcon {
+	height: 100%;
+	background-image: url('images/TicketMarkW.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: auto 100%;
+	margin: 0 auto;
+}
+
+#confirmedBottom {
+	height: 55%;
+	background-color: #084B77;
+}
+
+#confirmedBottom h3 {
+	padding: 16px;
+	text-align: center; 
+	position: relative;
+	top: 20%;
+	color: white;
+}
+
+.confirmTitle {
+	margin-top: 5%;
+	text-transform: uppercase;
+}
+
